@@ -13,6 +13,7 @@ public static void main(String[] args){
         System.out.print("El numero 2 es mayor que el 1");
     }else{
         System.out.print("Son iguales");
+        
     }
 
 
