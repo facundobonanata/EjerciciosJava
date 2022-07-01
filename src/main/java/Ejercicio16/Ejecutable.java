@@ -19,7 +19,6 @@ public class Ejecutable {
         System.out.println("Introducir altura");
         int altura = captura.nextInt();
 
-
         //3 obj Persona
         Persona persona1 = new Persona(nombre, edad, DNI, sexo, peso, altura);
         Persona persona2 = new Persona(nombre, edad, sexo);
@@ -37,20 +36,20 @@ public class Ejecutable {
         persona2.setAltura(175);
         persona2.setPeso(70);
 
-        System.out.println("Persona 2");
+        /*System.out.println("Persona 2");
         mayorDeEdad(persona2);
         mostrarPeso(persona2);
-        System.out.println(persona2.toString());
+        System.out.println(persona2.toString());*/
 
         /*System.out.println("Persona");
         mayorDeEdad(persona);
         mostrarPeso(persona);
         System.out.println(persona.toString());*/
 
-        /*System.out.println("Persona1");
+        System.out.println("Persona1");
+        System.out.println(persona1.toString());
         mayorDeEdad(persona1);
         mostrarPeso(persona1);
-        System.out.println(persona1.toString());*/
 
 
 //p metodos//

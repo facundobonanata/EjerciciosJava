@@ -10,6 +10,7 @@ public class Persona {   //clase persona//
 
     //usar constante(final)//
     public final static char SEXODF='H';
+    public final static char SEXO='M';
     public final static int DELGADO =-1;
     public final static int IDEAL=0;
     public final static int SOBREPESO=1;
@@ -34,8 +35,6 @@ public class Persona {   //clase persona//
         this.DNI="";
         this.altura=0;
         this.peso=0;
-
-
     }
     //todos los param
     public Persona(String nombre, int edad, String dni, char sexo, double peso, int altura) {
@@ -46,24 +45,6 @@ public class Persona {   //clase persona//
         this.peso = peso;
         this.altura = altura;
 
-    }
-    public void setNombre(String nombre){ //setear vlares
-        this.nombre=nombre;
-    }
-    public void setEdad(int edad){
-        this.edad=edad;
-    }
-    public void setDNI(String DNI){  //quitar dni//
-        this.DNI=DNI;
-    }
-    public void setSexo(char sexo){
-        this.sexo=sexo;
-    }
-    public void setPeso(double peso){
-        this.peso=peso;
-    }
-    public void setAltura(int altura){
-        this.altura=altura;
     }
 
     //IMC -> (peso en kg/(altura^2  en m))//usar final para el retrn
@@ -93,11 +74,12 @@ public class Persona {   //clase persona//
 
     }
 
+
     //Determinar si sexo es corrcto, H defecto//
 
-    public char determinarSexo(char sexo){
-        if(this.sexo != 'W' && this.sexo !='H'){
-            this.sexo=SEXODF;
+    private char determinarSexo(char sexo){
+        if(this.sexo != 'M' && this.sexo !='H'){
+            return sexo;
         }
         return SEXODF;
 
@@ -106,13 +88,35 @@ public class Persona {   //clase persona//
     @Override
     public String toString(){
         return "Informacion \n" +
-                "Nombre: " + nombre + "\n" +
-                 "Sexo: " + sexo + "\n" +
-                 "Edad: " + edad + " años\n" +
+                "Nombre: " + this.nombre + "\n" +
+                "Sexo: " + this.sexo + "\n" +
+                "Edad: " + this.edad + " años\n" +
                 "DNI" + DNI + "\n" +
-                 "Altura: " + altura + " metros\n" +
-                "peso: " + peso+ " kg\n";
+                "Altura: " + this.altura + " cm\n" +
+                "peso: " + this.peso+ " kg\n";
     }
+
+    //metodo set de cada parametro
+    public void setNombre(String nombre){ //setear vlares
+        this.nombre=nombre;
+    }
+    public void setEdad(int edad){
+        this.edad=edad;
+    }
+    public void setDNI(String DNI){  //quitar dni//
+        this.DNI=DNI;
+    }
+    public void setSexo(char sexo){
+        this.sexo=sexo;
+    }
+    public void setPeso(double peso){
+        this.peso=peso;
+    }
+    public void setAltura(int altura){
+        this.altura=altura;
+    }
+
+
 
     //DNI 8 cifras aleatorias
 }

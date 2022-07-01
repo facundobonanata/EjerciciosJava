@@ -15,3 +15,7 @@ X
 (src/main/java/ejercicios/Ejercicio2.java,5\3\537b4a09e8fb43a11098c26071264198cbf4e88e
 X
 (src/main/java/ejercicios/Ejercicio7.java,4\8\48cc2072e938af4c40a65e035ba0a3b368bd3992
+X
+(src/main/java/ejercicios/Ejercicio6.java,e\f\ef59002230b779faebdb39caea02d26b90b91c77
+X
+(src/main/java/ejercicios/Ejercicio4.java,9\b\9b9bf08accd27531317f3381b9af15aa7351631b
