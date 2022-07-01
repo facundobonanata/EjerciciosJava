@@ -10,8 +10,6 @@ public class Ejecutable {
         String nombre = captura.nextLine();
         System.out.println("Introducir edad: ");
         int edad = captura.nextInt();
-        System.out.println("Introducir dni: ");
-        String DNI = captura.nextLine();
         System.out.println("Introducir sexo");
         char sexo = captura.next().charAt(0);
         System.out.println("introducir peso: ");
@@ -20,7 +18,7 @@ public class Ejecutable {
         int altura = captura.nextInt();
 
         //3 obj Persona
-        Persona persona1 = new Persona(nombre, edad, DNI, sexo, peso, altura);
+        Persona persona1 = new Persona(nombre, edad, sexo, peso, altura);
         Persona persona2 = new Persona(nombre, edad, sexo);
         Persona persona = new Persona(); //establecer  (set)//
 

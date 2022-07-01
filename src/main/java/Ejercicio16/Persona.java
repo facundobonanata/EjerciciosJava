@@ -3,7 +3,6 @@ package Ejercicio16;
 public class Persona {   //clase persona//
     private String nombre;
     private int edad;
-    private String DNI;
     private char sexo;
     private double peso;
     private int altura;
@@ -22,7 +21,6 @@ public class Persona {   //clase persona//
         this.nombre="";
         this.edad=0;
         this.sexo= 'H';
-        this.DNI="";
         this.altura= 0;
         this.peso = 0;
     }
@@ -31,17 +29,15 @@ public class Persona {   //clase persona//
     public Persona(String nombre, int edad, char sexo){
         this.nombre = nombre;
         this.edad = edad;
-        this.sexo=sexo;
-        this.DNI="";
+        this.sexo=determinarSexo(sexo);
         this.altura=0;
         this.peso=0;
     }
     //todos los param
-    public Persona(String nombre, int edad, String dni, char sexo, double peso, int altura) {
+    public Persona(String nombre, int edad, char sexo, double peso, int altura) {
         this.nombre = nombre;
         this.edad = edad;
-        this.DNI = DNI;
-        this.sexo = sexo;
+        this.sexo = determinarSexo(sexo);
         this.peso = peso;
         this.altura = altura;
 
@@ -91,7 +87,6 @@ public class Persona {   //clase persona//
                 "Nombre: " + this.nombre + "\n" +
                 "Sexo: " + this.sexo + "\n" +
                 "Edad: " + this.edad + " años\n" +
-                "DNI" + DNI + "\n" +
                 "Altura: " + this.altura + " cm\n" +
                 "peso: " + this.peso+ " kg\n";
     }
@@ -103,9 +98,7 @@ public class Persona {   //clase persona//
     public void setEdad(int edad){
         this.edad=edad;
     }
-    public void setDNI(String DNI){  //quitar dni//
-        this.DNI=DNI;
-    }
+
     public void setSexo(char sexo){
         this.sexo=sexo;
     }
