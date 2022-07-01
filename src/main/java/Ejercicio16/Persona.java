@@ -3,16 +3,16 @@ package Ejercicio16;
 public class Persona {   //clase persona//
     private String nombre;
     private int edad;
-    private String dni;
+    private String DNI;
     private char sexo;
     private double peso;
     private int altura;
 
     //usar constante(final)//
-    private final static char SEXODF='H';
-    private final static int DELGADO =-1;
-    private final static int IDEAL=0;
-    private final static int SOBREPESO=1;
+    public final static char SEXODF='H';
+    public final static int DELGADO =-1;
+    public final static int IDEAL=0;
+    public final static int SOBREPESO=1;
 
     //3 const: defecto, nombre, edad y sexo, todos los para//
 
@@ -21,7 +21,7 @@ public class Persona {   //clase persona//
         this.nombre="";
         this.edad=0;
         this.sexo= 'H';
-        this.dni="";
+        this.DNI="";
         this.altura= 0;
         this.peso = 0;
     }
@@ -31,7 +31,7 @@ public class Persona {   //clase persona//
         this.nombre = nombre;
         this.edad = edad;
         this.sexo=sexo;
-        this.dni="";
+        this.DNI="";
         this.altura=0;
         this.peso=0;
 
@@ -41,7 +41,7 @@ public class Persona {   //clase persona//
     public Persona(String nombre, int edad, String dni, char sexo, double peso, int altura) {
         this.nombre = nombre;
         this.edad = edad;
-        this.dni = dni;
+        this.DNI = DNI;
         this.sexo = sexo;
         this.peso = peso;
         this.altura = altura;
@@ -53,8 +53,8 @@ public class Persona {   //clase persona//
     public void setEdad(int edad){
         this.edad=edad;
     }
-    public void setDni(String dni){  //quitar dni//
-        this.dni=dni;
+    public void setDNI(String DNI){  //quitar dni//
+        this.DNI=DNI;
     }
     public void setSexo(char sexo){
         this.sexo=sexo;
@@ -101,6 +101,17 @@ public class Persona {   //clase persona//
         }
         return SEXODF;
 
+    }
+
+    @Override
+    public String toString(){
+        return "Informacion \n" +
+                "Nombre: " + nombre + "\n" +
+                 "Sexo: " + sexo + "\n" +
+                 "Edad: " + edad + " años\n" +
+                "DNI" + DNI + "\n" +
+                 "Altura: " + altura + " metros\n" +
+                "peso: " + peso+ " kg\n";
     }
 
     //DNI 8 cifras aleatorias

@@ -10,10 +10,8 @@
 X
 (src/main/java/ejercicios/Ejercicio1.java,6\a\6ad3ca3d7e46f89db84493353826f239190e618f
 X
-(src/main/java/ejercicios/Ejercicio4.java,9\b\9b9bf08accd27531317f3381b9af15aa7351631b
-X
-(src/main/java/ejercicios/Ejercicio5.java,c\8\c84ea9d42ea65b1b16ee577065e2dbc4e96a7b92
-X
 (src/main/java/ejercicios/Ejercicio3.java,6\5\654738aad477ae10c10e1a6a6537e732d56faa63
 X
 (src/main/java/ejercicios/Ejercicio2.java,5\3\537b4a09e8fb43a11098c26071264198cbf4e88e
+X
+(src/main/java/ejercicios/Ejercicio7.java,4\8\48cc2072e938af4c40a65e035ba0a3b368bd3992
