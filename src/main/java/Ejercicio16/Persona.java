@@ -7,6 +7,9 @@ public class Persona {   //clase persona//
     private double peso;
     private int altura;
 
+    private String DNI;
+
+
     //usar constante(final)//
     public final static char SEXODF='H';
     public final static char SEXO='M';
@@ -21,6 +24,7 @@ public class Persona {   //clase persona//
         this.nombre="";
         this.edad=0;
         this.sexo= 'H';
+        this.sexo='M';
         this.altura= 0;
         this.peso = 0;
     }
@@ -73,19 +77,19 @@ public class Persona {   //clase persona//
 
     //Determinar si sexo es corrcto, H defecto//
 
-    private char determinarSexo(char sexo){
+    public char determinarSexo(char sexo){
         if(this.sexo != 'M' && this.sexo !='H'){
             return sexo;
+        }else {
+            return SEXODF;
         }
-        return SEXODF;
-
     }
 
     @Override
     public String toString(){
         return "Informacion \n" +
                 "Nombre: " + this.nombre + "\n" +
-                "Sexo: " + this.sexo + "\n" +
+                "Sexo: " + sexo + "\n" +
                 "Edad: " + this.edad + " años\n" +
                 "Altura: " + this.altura + " cm\n" +
                 "peso: " + this.peso+ " kg\n";

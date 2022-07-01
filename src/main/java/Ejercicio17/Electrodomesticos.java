@@ -68,7 +68,7 @@ public class Electrodomesticos {
     private char comprobarConsumoEnergetico(char letra) {
         char consumo = consumoEnergeticoDEF;
         for (char cons : tipoConsumoEnergetico) {
-            if (Character.toUpperCase(letra) == cons) ;
+            if (Character.toUpperCase(letra) == cons);
             consumo = Character.toUpperCase(letra);
         }
         return consumo;
